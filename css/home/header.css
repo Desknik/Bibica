@@ -1,0 +1,74 @@
+@import url(../config.css);
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: relative;
+    width: 100%;
+    height: 70px;
+}
+
+
+header nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    
+    margin-right: 35px;
+    color: var(--white);
+    font-family: var(--normal-font);
+}
+
+header nav a{ 
+    cursor: pointer;
+    font-weight: normal;
+    color: var(--white);
+}
+
+header nav a:hover{   /* Hover */
+    border-bottom: 2px solid var(--pink1);
+}
+
+header .logo{  /* Background Logo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 65px;
+    height: 65px;
+
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: var(--transparent-b);
+}
+
+header .logo img{ /* Logo */
+    width: 52px;
+    height: 50px;
+
+    margin-right: 5px;
+    margin-top: 3px;
+}
+
+header .user{   /*Background User Button*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    right: 50px;
+
+    width: 42px;
+    height: 42px;
+
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: var(--transparent-b);
+}
+
+header .user i{   /* User */
+    color: var(--white);
+}
