@@ -5,8 +5,8 @@ display: flex;
 flex-direction: column;
 align-items: center;
 
-padding-top: 80px;
-height: 750px;
+padding: 80px;
+min-height: 800px;
 }
 
 main .menu h2{  /* Titulo */
@@ -21,21 +21,27 @@ main .menu h2{  /* Titulo */
 
 main .menu .container{ /* Box envolvendo os Produtos */
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 150px;
+    flex-wrap: wrap;
     
-    width: 100%;
+    max-width: 1200px;
 }
 
 main .menu .prod{  /* Box do Produto */
-display: flex;
-flex-direction: column;
-align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-margin-top: 50px;
-height: 370px;
+    margin-top: 50px;
+    height: 380px;
 
-overflow: hidden;
-transition: all 0.4s;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+
+main .menu .prod img{  /* Box do Produto */
+    width: 300px;
 }
 
 

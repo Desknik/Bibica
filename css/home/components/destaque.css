@@ -6,9 +6,8 @@ flex-direction: column;
 align-items: center;
 
 padding-top: 80px;
-height: 450px;
+padding-bottom: 80px;
 
-background-color: var(--white);
 }
 
 main .destaque h2{  /* Titulo */
@@ -25,51 +24,67 @@ main .destaque .container{ /* Box envolvendo os Produtos */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin: 50px;
     gap: 50px;
     
     align-items: center;
-    width: 100%;
+    max-width: 1200px;
 }
 
-main .destaque .box{  /* Box do Produto */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+main .destaque .prod{  /* Box do Produto */
     position: relative;
-    padding: 10px;
-    margin-top: 50px;
-    width: 230px;
-    height: 120px;
 
-    border: 1px solid var(--pink2);
-    border-radius: 5px;
-}
-
-main .destaque .box p{  /* Nome do Produto */
-    font-size: 1em;
-    text-align: center;
-    font-family: var(--normal-font);
-}
-
-main .destaque .box span{  /* Número do diferencial */
-    content: attr(var(--num));
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
+    
+    cursor: pointer;
+    transition: all 0.3s;
+}
 
-    width: 40px;
-    height: 40px;
+main .destaque .prod:hover{  /* Hover Box do Produto */
+    transform: scale(1.1);
+}
+
+main .destaque .prod p{  /* Titulo do prod. */
+    font-size: 1em;
+    font-weight: 300;
+    font-family: var(--normal-font);
+    text-align: center;
+}
+
+main .destaque .prod::after{  /* Border Bottom */
+    content: '';
 
     position: absolute;
-    top: -20px;
-    background-color: var(--pink2);
-    border-radius: 50%;
+    bottom: -10px;
 
-    font-size: 1.2em;
+    width: 0px;
+    height: 3px;
+    background-color: var(--pink2);
+    transition: all 0.3s;
+}
+
+main .destaque .prod:hover::after{  /* Hover Border Bottom */
+   width: 30px;
+}
+
+main .destaque .btn{  /* Botão encomenda */
+    display: block;
+    padding: 5px 20px;
+
+    border: 2px solid var(--pink2);
+    border-radius: 10px;
+
+    
+    font-size: 1.5em;
+    color: var(--black);
+    font-family: var(--fantasy-font);
+    transition: all 0.3s;
+}
+
+main .destaque .btn:hover{ /* Hover Btn */
+    background-color: var(--pink2);
     color: var(--white);
-    font-weight: bold;
-    font-family: var(--normal-font);
-    
-    
 }
