@@ -34,7 +34,7 @@
 
 /* Scale */
 .scale-hover{
-    transition: 300ms;
+    transition: 0.3s;
 }
 
 .scale-hover:hover{

@@ -8,10 +8,11 @@ header{
     position: absolute;
     width: 100%;
     height: 70px;
+    transition: all 0.3s;
 }
 
 
-header nav{
+header nav{      /* Navegação das paginas  */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,7 +23,7 @@ header nav{
     font-family: var(--normal-font);
 }
 
-header nav a{ 
+header nav a{   /* Links */
     cursor: pointer;
     font-weight: normal;
     color: var(--white);
@@ -53,7 +54,7 @@ header .logo img{ /* Logo */
     margin-top: 3px;
 }
 
-header .user{   /*Background User Button*/
+header .user{   /* Botão da conta do Usuário*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,6 +70,19 @@ header .user{   /*Background User Button*/
     background-color: var(--transparent-b);
 }
 
-header .user i{   /* User */
+header .user i{   /* Icone */
     color: var(--white);
 }
+
+/* Efeito Sticky */
+
+header.sticky{
+    position: fixed ;
+    z-index: 99999;
+    background-color: var(--black);
+}
+
+header.sticky .logo, header.sticky .user{ 
+    background-color: var(--black);
+}
+

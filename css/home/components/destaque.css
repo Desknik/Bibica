@@ -40,13 +40,7 @@ main .destaque .prod{  /* Box do Produto */
     align-items: center;
     
     cursor: pointer;
-    transition: all 0.3s;
 }
-
-main .destaque .prod:hover{  /* Hover Box do Produto */
-    transform: scale(1.1);
-}
-
 main .destaque .prod p{  /* Titulo do prod. */
     font-size: 1em;
     font-weight: 300;

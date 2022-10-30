@@ -1,6 +1,9 @@
-@import url(components/header.css);
+@import url(../components/header.css);
 @import url(components/hero.css);
 @import url(components/menu.css);
 @import url(components/diferencial.css);
 @import url(components/destaque.css);
 @import url(components/decoracao.css);
+@import url(components/decoracao.css);
+@import url(../components/footer.css);
+

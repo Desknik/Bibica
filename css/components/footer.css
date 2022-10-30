@@ -1,0 +1,83 @@
+footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    padding: 30px;
+    background-color: var(--black);
+
+    color: var(--white);
+    font-family: var(--normal-font);
+}
+
+footer .container {  /* Box Contendo os boxes */
+    position: relative;
+    margin: 30px;
+
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+
+footer .container::after {  /* Hr */
+    content: '';
+    position: absolute;
+    width: 800px;
+    height: 2px;
+    background-color: var(--pink1);
+    bottom: -20px;
+
+}
+
+footer .container .box{ /* Box com conteúdos*/
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1em;
+}
+
+footer .container .box strong{ /* Título do box */
+    color: var(--white);
+    font-weight: bolder;
+    margin-bottom: 10px !important;
+}
+
+footer .container .box p, footer .container .box a, footer .container .box i{  /* informações do box */
+    font-weight: 400;
+    color: var(--white);
+    margin-bottom: 5px;
+}
+
+footer .container .box p:hover i, footer .container .box a:hover{  /* Efeito Hover */
+    color: var(--pink1);
+}
+
+footer .socialBox{  /*Box das Redes Sociais */
+    display: flex;
+    margin: 10px;
+    gap: 20px;
+}
+
+footer .socialBox .social{  /* Redes Sociais */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px ;
+    
+    cursor: pointer;
+
+    font-size: 20px;
+    color: var(--white);
+    border: 2px solid var(--white);
+    border-radius: 50%;
+}
+
+footer .socialBox .social:hover{  /* Hover Redes Sociais */
+    color: var(--pink1);
+    border: 2px solid var(--pink1);
+}
+
