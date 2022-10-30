@@ -12,7 +12,7 @@ main .hero{   /* Section hero */
 
     z-index: -10;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-    background-image: url(../../../img/Hero/Hero.png);
+    background-image: url(../../../img/Home/Hero/Hero.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -22,7 +22,7 @@ main .hero .logo{  /* Central Logo */
     width: 577px;
     height: 513px;
 
-    background-image: url(../../../img/Logo/Logo\ L.svg);
+    background-image: url(../../../img/Home/Logo/Logo\ L.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
