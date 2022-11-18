@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@font-face {
+font-family: 'bernadette';
+src: url(fonts/bernadette.ttf) format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    list-style: none;
+
+
+}
+
+.ff-b{
+    font-family: 'bernadette';
+}
+
+:root{
+    --primary: #FCD2EE;
+    --secundary: #EA9AB2;
+    --cor3: #EFCFE3;
+    --cor4: #E27396;
+    --cor5: #EAF2D7;
+    --cor6: #B3DEE2;
+}
+
+header .navbar-collapse{
+    height: 55px;
+    justify-content: center;
+}
+
+header .navbar-nav{
+    align-items: center;
+}
+
+header .nav-item{
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    transition: all 0.3s;
+}
+
+header .nav-item:hover{
+    border-bottom: 2px solid var(--primary);
+}
+
+header .nav-link{
+    padding-bottom: 0.2rem; padding-top: 0.2rem;   
+}
+
+header .logo img, .mob-logo img{
+    width: 70px;
+}
+
+.mob-logo{
+    display: none;
+}
+
+/* Banner */
+
+main .banner{
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+
+    background: url(img/banner/banner.png);
+    min-height: 80vh;
+    background-size: cover;
+    background-position: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
+}
+
+.banner button{
+    padding: 7px 10px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.banner button a{
+    color: black;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.banner button:hover{
+    background-color: var(--secundary);
+}
+
+.banner button:hover a{
+    color: white;
+}
+
+/* Principais */
+
+.principal h2{
+    display: inline;
+    border-bottom: 2px solid var(--primary);
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cards .img-box{
+    overflow: hidden;
+}
+
+.cards .img-box img{
+    transition: all 0.3s;
+}
+
+.cards .img-box:hover img{
+    transform: scale(1.1);
+}
+
+.cards .body{
+    width: 100%;
+    position: absolute;
+    padding-left: 5px;
+    bottom: 0px;
+    color: white;
+    background-color: #f88cd46c;
+}
+    
+/* Decorações */
+
+.decoracoes{
+    background-color: var(--primary);
+}
+
+
+
+
+
+@media (max-width: 990px){
+    .mob-logo{
+        display: block;
+    }
+}
